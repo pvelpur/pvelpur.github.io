@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
+    const imageCards = document.querySelectorAll('.image-card');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
@@ -28,6 +29,12 @@ window.addEventListener('DOMContentLoaded', event => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
+        });
+    });
+
+    imageCards.forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('clicked'); // Toggle the class on click
         });
     });
 
