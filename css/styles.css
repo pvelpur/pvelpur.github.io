@@ -11001,6 +11001,12 @@ p.lead {
   font-size: 3rem;
 }
 
+.small-link {
+  font-size: 1.2rem; /* Adjust size as needed (smaller than default) */
+  text-decoration: none; /* Optional: removes underline */
+  color: #007bff; /* Optional: Bootstrap-like link color, adjust to match your design */
+}
+
 section.resume-section {
   display: flex;
   align-items: center;
